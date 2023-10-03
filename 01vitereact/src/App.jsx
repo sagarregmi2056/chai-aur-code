@@ -1,3 +1,4 @@
+import Header from "./Header"
 
 
 
@@ -6,8 +7,8 @@ function App() {
 
   return (
     <>
-     
-      <h1>welcome to react vite with chai aur code </h1>
+     <Header/>
+      
     </>
   )
 }
