@@ -9,6 +9,14 @@ const App = () => {
   // let counter = 12;
  const increase=()=>{
   // here we are incrementing value of counter
+  if(20>counter){
+    setcounter(counter+1)
+    console.log(`clicked ${counter}`)
+
+  }
+  else{
+    return setcounter(counter);
+  }
   
   setcounter(counter+1)
   // console.log(`clicked ${counter}`)
