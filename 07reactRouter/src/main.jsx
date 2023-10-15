@@ -7,6 +7,8 @@ import Root from './Root.jsx'
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx'
 import Contact from './components/contactus/Contact.jsx'
+import Userprofile from './components/Userprofile/Userprofile.jsx'
+import Github,{githubinfoloader} from './components/github/Github.jsx'
 
 const router = createBrowserRouter([
 
@@ -25,7 +27,22 @@ const router = createBrowserRouter([
       {
         path:'contact',
         element:<Contact/>
-      }
+      },
+
+      {
+        path: "userprofile/:userid",
+        element: <Userprofile/>
+      },
+
+      {
+
+        loader:githubinfoloader,
+        path: "github",
+        element: <Github/>,
+       
+
+
+      },
     ]
   }
 
