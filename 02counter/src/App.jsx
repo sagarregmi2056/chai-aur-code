@@ -18,7 +18,7 @@ const App = () => {
     return setcounter(counter);
   }
   
-  setcounter(counter+1)
+  // setcounter(counter+1)
   // console.log(`clicked ${counter}`)
 
   }
